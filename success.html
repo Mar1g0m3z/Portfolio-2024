@@ -30,6 +30,23 @@
             We will contact you as soon as possible.</p>
     </div>
     <script>
+        window.onload = function () {
+            // Retrieve stored form data
+            const formData = JSON.parse(localStorage.getItem('formData'));
+
+            // Display the parameters
+            if (formData) {
+                document.getElementById('name').textContent = formData.name;
+                document.getElementById('displayName').textContent = formData.name;
+                document.getElementById('displayEmail').textContent = formData.email;
+                document.getElementById('displayMessage').textContent = formData.message;
+            }
+
+            // Clear the stored data
+            localStorage.removeItem('formData');
+        };
+    </script>
+    <script>
         // Example: Retrieve query parameters from URL
         function getQueryParam(param) {
             let searchParams = new URLSearchParams(window.location.search);
