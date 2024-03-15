@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 // Put contacting email here
 $php_main_email = "marisela.gomez.011@gmail.com";
@@ -48,4 +48,4 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 	echo "<span class='contact_error'>* Invalid email *</span>";
 }
 
-?>
+?> -->
