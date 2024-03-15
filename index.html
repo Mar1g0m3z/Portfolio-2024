@@ -428,22 +428,22 @@
 					</div>
 					<div class="right wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
 						<div class="fields">
-							<form action="./modal/contact.php" method="post" class="contact_form" id="contact_form">
+							<form method="POST" netlify class="contact_form" id="contact_form">
 								<div class="returnmessage"
 									data-success="Your message has been received, We will contact you soon."></div>
 								<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 								<div class="first">
 									<ul>
 										<li>
-											<input id="name" type="text" placeholder="Name" name="ajax_name">
+											<input id="name" type="text" placeholder="Name" name="name">
 										</li>
 										<li>
-											<input id="email" type="text" placeholder="Email" name="ajax_email">
+											<input id="email" type="text" placeholder="Email" name="email">
 										</li>
 									</ul>
 								</div>
 								<div class="last">
-									<textarea id="message" placeholder="Message" name="ajax_message"></textarea>
+									<textarea id="message" placeholder="Message" name="message"></textarea>
 								</div>
 								<div class="grax_tm_button">
 									<button type="submit" id="send_message">Send Message</button>
