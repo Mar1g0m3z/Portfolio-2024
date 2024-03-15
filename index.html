@@ -36,23 +36,6 @@
 <body> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark"> -->
 
 	<!-- PRELOADER -->
-	<script>
-		document.getElementById('contact_form').onsubmit = function (e) {
-			// Prevent default form submission
-			e.preventDefault();
-
-			// Store form data
-			const formData = {
-				name: document.getElementById('name').value,
-				email: document.getElementById('email').value,
-				message: document.getElementById('message').value,
-			};
-			localStorage.setItem('formData', JSON.stringify(formData));
-
-			// Redirect to the success page
-			window.location.href = '/success.html';
-		};
-	</script>
 	<div id="preloader">
 		<div class="loader_line"></div>
 	</div>
