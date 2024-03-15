@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Success</title>
+    <style>
+        .success-message {
+            padding: 50px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .success-message strong {
+            color: #f00a77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-message">
+        <p>Hello <strong id="name">[Name]</strong>,</p>
+        <p>Thank you for contacting us.</p>
+        <p><strong>Name:</strong> <span id="displayName">[Name]</span><br>
+            <strong>Email:</strong> <span id="displayEmail">[Email]</span><br>
+            <strong>Message:</strong> <span id="displayMessage">[Message]</span>
+        </p>
+        <p>This is a Contact Confirmation mail.<br>
+            We will contact you as soon as possible.</p>
+    </div>
+    <script>
+        // Example: Retrieve query parameters from URL
+        function getQueryParam(param) {
+            let searchParams = new URLSearchParams(window.location.search);
+            return searchParams.get(param) || 'Not provided';
+        }
+
+        // Example: Displaying the parameters
+        document.getElementById('name').textContent = getQueryParam('name');
+        document.getElementById('displayName').textContent = getQueryParam('name');
+        document.getElementById('displayEmail').textContent = getQueryParam('email');
+        document.getElementById('displayMessage').textContent = getQueryParam('message');
+    </script>
+</body>
+
+</html>
